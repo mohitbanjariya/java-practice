@@ -42,17 +42,31 @@ public class onedimensionarr {
     	System.out.println(arr1[2][2]);
     	System.out.println("--------------------------");
     	
-//    	for(int i=0; i<=arr1.length; i++)
-//    	{
-//    		for(int j=0; j<=arr1.length; j++)
-//    		{
-//    			System.out.println(arr1[i][j]);
-//    		}
-//    		System.out.print("\n");
-//    	}
+    	
+		
+    	
+    	for(int i=0; i<=arr1.length; i++)
+    	{
+   		for(int j=0; j<=arr1.length; j++)
+    		{
+    			System.out.println(arr1[i][j]);
+  		}
+    		System.out.print("\n");
+				
+   	}
+				int sum=0;
+				for(int i=0; i<=arr1.length; i++)
+		    	{
+		    		for(int j=0; j<=arr1.length; j++)
+		    		{
+			    			sum=sum+arr1[i][j];
+			    	}
+			    }
+				System.out.println(+sum+"sum of 2d");
     	
 		//2nd way to create 2dimension array = run time memory memory allocation
-
+		System.out.println("--------------------------");
+		
 		int[][] arr2 = new int [3][4];
 		arr2[0][0] = 12;
 		arr2[0][1] = 11;
@@ -75,6 +89,7 @@ public class onedimensionarr {
 		{
 			for(int j=0; j<=arr2.length; j++)
 			{
+			
 				System.out.println(arr2[i][j]);
 			}
 			System.out.print("\n");
